@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/img_bar_back"
+        android:background="@drawable/back"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/sp_bar_fragment"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/img_bar_back"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/img_bar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tv_bar_fragment"
+        android:layout_width="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edt_bar_fragment"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_bar_right"
+        android:layout_toRightOf="@id/img_bar_back"
+        android:layout_height="wrap_content"
+        android:lines="1"/>
+</RelativeLayout>
